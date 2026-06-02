@@ -82,7 +82,6 @@ const CPUS = [
 //   mid        → gama media, 1080p/1440p
 //   high       → gama alta, 1440p/4K
 //   enthusiast → gama entusiasta, 4K máximo
-//
 const GPUS = [
   // NVIDIA RTX 30
   makeGPU('rtx3050',   'NVIDIA','RTX 3050',    2560, 8,1777,'PCIe 4.0 x8',  130, 30,'entry'),
@@ -132,9 +131,6 @@ const GPUS = [
 // ─────────────────────────────────────────────
 // RAM
 // ─────────────────────────────────────────────
-// Tier por capacidad Y generación:
-//   DDR4 y DDR5 arrancan igual en capacidades bajas,
-//   pero a igual capacidad DDR5 es un escalón superior.
 const RAMS = (() => {
   const list = [];
   const speeds = {
@@ -150,7 +146,7 @@ const RAMS = (() => {
     c >= 16 ? 'low'        : 'entry';
 
   // DDR5: un escalón superior a DDR4 a igual capacidad
-  // (8GB DDR5 = low en vez de entry; 16GB DDR5 = mid en vez de low, etc.)
+
   const tierDDR5 = c =>
     c >= 96 ? 'enthusiast' :
     c >= 64 ? 'enthusiast' :
@@ -180,13 +176,7 @@ const RAMS = (() => {
 // ─────────────────────────────────────────────
 // SSD
 // ─────────────────────────────────────────────
-// Tier considera TANTO la interfaz como la capacidad:
-//   Un SATA de 4TB puede superar en utilidad a un NVMe 3.0 de 500GB.
-//   Regla aplicada:
-//     SATA:        entry ≤500GB | low 1TB | mid 2TB | high 4TB
-//     NVMe 3.0:    low ≤500GB  | mid 1TB | high 2–4TB
-//     NVMe 4.0:    mid ≤500GB  | high 1–2TB | enthusiast 4TB
-//     NVMe 5.0:    high ≤1TB   | enthusiast 2–4TB
+
 const SSDS = (() => {
   const list = [];
   const ifaces = ['SATA', 'NVMe PCIe 3.0', 'NVMe PCIe 4.0', 'NVMe PCIe 5.0'];
@@ -231,12 +221,7 @@ const SSDS = (() => {
 // ─────────────────────────────────────────────
 // PSU
 // ─────────────────────────────────────────────
-// Coherencia potencia/certificación:
-//   450–550W → Bronze máximo (White posible; Silver/Gold raro pero existe)
-//   650–750W → hasta Gold
-//   850–1000W → hasta Platinum
-//   1200–1600W → Platinum / Titanium (aquí sí tiene sentido)
-// Se eliminan combinaciones imposibles o absurdas (450W Titanium, etc.)
+
 const PSUS = (() => {
   const list = [];
 
