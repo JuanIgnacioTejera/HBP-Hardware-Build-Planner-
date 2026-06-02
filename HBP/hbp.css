@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════
-   HBP · Hardware Build Planner — Styles
+   HBP · Hardware Build Planner 
    ═══════════════════════════════════════════ */
 
 :root {
@@ -31,7 +31,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--sans);
-  font-size: 15px;         /* era 13px — +15% */
+  font-size: 15px;        
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -49,14 +49,14 @@ header {
   max-width: 1700px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 56px;            /* era 48px */
+  height: 56px;           
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .logo { display: flex; align-items: center; gap: 12px; }
 .logo-icon {
-  width: 32px; height: 32px;  /* era 28px */
+  width: 32px; height: 32px; 
   background: var(--text);
   border-radius: 6px;
   display: flex; align-items: center; justify-content: center;
@@ -64,14 +64,14 @@ header {
 .logo-icon svg { color: var(--bg); }
 .logo-text h1 {
   font-family: var(--mono);
-  font-size: 15px;         /* era 13px */
+  font-size: 15px;         
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--text);
 }
 .logo-text p {
   font-family: var(--mono);
-  font-size: 10px;         /* era 9px */
+  font-size: 10px;         
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text3);
@@ -79,14 +79,14 @@ header {
 .header-actions { display: flex; gap: 8px; }
 .btn {
   display: inline-flex; align-items: center; gap: 7px;
-  padding: 6px 12px;       /* era 5px 10px */
+  padding: 6px 12px;      
   border: 1px solid var(--border2);
   background: var(--surface);
   color: var(--text);
   border-radius: 6px;
   cursor: pointer;
   font-family: var(--mono);
-  font-size: 12px;         /* era 11px */
+  font-size: 12px;        
   font-weight: 500;
   transition: background 0.15s, border-color 0.15s;
   text-decoration: none;
@@ -100,7 +100,7 @@ header {
   margin: 0 auto;
   padding: 18px 24px;
   display: grid;
-  grid-template-columns: 310px 1fr 350px;  /* era 280 / 320 */
+  grid-template-columns: 310px 1fr 350px;  
   gap: 16px;
   height: calc(100vh - 56px);
 }
@@ -115,14 +115,14 @@ header {
   overflow: hidden;
 }
 .panel-header {
-  padding: 12px 16px;      /* era 10px 14px */
+  padding: 12px 16px;      
   border-bottom: 1px solid var(--border);
   background: var(--surface2);
   display: flex; align-items: center; justify-content: space-between;
 }
 .panel-title {
   font-family: var(--mono);
-  font-size: 12px;         /* era 11px */
+  font-size: 12px;       
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -143,11 +143,11 @@ header {
   flex-wrap: wrap;
 }
 .tab {
-  padding: 5px 10px;       /* era 4px 8px */
+  padding: 5px 10px;    
   border-radius: 4px;
   cursor: pointer;
   font-family: var(--mono);
-  font-size: 11px;         /* era 10px */
+  font-size: 11px;        
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -167,10 +167,10 @@ header {
   background: var(--bg);
   border: 1px solid var(--border2);
   border-radius: 5px;
-  padding: 6px 10px;       /* era 5px 8px */
+  padding: 6px 10px;      
   color: var(--text);
   font-family: var(--mono);
-  font-size: 12px;         /* era 11px */
+  font-size: 12px;        
   outline: none;
   transition: border-color 0.15s;
 }
@@ -179,7 +179,7 @@ header {
 
 .comp-list { display: flex; flex-direction: column; gap: 3px; }
 .comp-item {
-  padding: 8px 10px;       /* era 7px 9px */
+  padding: 8px 10px;       
   border-radius: 6px;
   cursor: pointer;
   border: 1px solid transparent;
@@ -190,13 +190,13 @@ header {
 .comp-item.dragging { opacity: 0.4; }
 .comp-item-info { flex: 1; min-width: 0; }
 .comp-item-name {
-  font-size: 13px; font-weight: 500;  /* era 12px */
+  font-size: 13px; font-weight: 500;  
   color: var(--text);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .comp-item-sub {
   font-family: var(--mono);
-  font-size: 11px;         /* era 10px */
+  font-size: 11px;        
   color: var(--text3);
   margin-top: 2px;
 }
@@ -204,7 +204,7 @@ header {
 /* ── TIER BADGE ── */
 .tier {
   font-family: var(--mono);
-  font-size: 10px;         /* era 9px */
+  font-size: 10px;         
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -270,7 +270,7 @@ header {
 .slot {
   border: 1px dashed var(--border2);
   border-radius: 8px;
-  min-height: 100px;       /* era 90px */
+  min-height: 100px;      
   transition: all 0.15s;
   position: relative;
   overflow: hidden;
@@ -323,12 +323,12 @@ header {
 }
 .slot-remove:hover { color: var(--red); }
 .slot-name {
-  font-size: 14px; font-weight: 500;  /* era 13px */
+  font-size: 14px; font-weight: 500; 
   color: var(--text); margin-bottom: 5px;
 }
 .slot-specs {
   font-family: var(--mono);
-  font-size: 11px;         /* era 10px */
+  font-size: 11px;         
   color: var(--text2);
   line-height: 1.5;
 }
@@ -337,7 +337,7 @@ header {
 .eval-section { margin-bottom: 16px; }
 .eval-label {
   font-family: var(--mono);
-  font-size: 10px;         /* era 9px */
+  font-size: 10px;        
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text3);
@@ -351,14 +351,14 @@ header {
 .ring-svg { flex-shrink: 0; }
 .ring-value {
   font-family: var(--mono);
-  font-size: 32px;         /* era 28px */
+  font-size: 32px;        
   font-weight: 600;
   color: var(--text);
   line-height: 1;
 }
 .ring-tier {
   font-family: var(--mono);
-  font-size: 11px;         /* era 10px */
+  font-size: 11px;        
   color: var(--text2);
   margin-top: 3px;
   letter-spacing: 0.04em;
@@ -370,7 +370,7 @@ header {
 }
 .metric-label {
   font-family: var(--mono);
-  font-size: 11px;         /* era 10px */
+  font-size: 11px;        
   color: var(--text2);
   width: 88px; flex-shrink: 0;
 }
@@ -397,7 +397,7 @@ header {
   border: 1px solid var(--border2);
   background: var(--surface2);
   font-family: var(--mono);
-  font-size: 12px;         /* era 11px */
+  font-size: 12px;       
   line-height: 1.5;
 }
 .bottleneck-ok   { border-color: var(--green-dim); color: var(--green); }
@@ -409,7 +409,7 @@ header {
   border-radius: 6px;
   border: 1px solid var(--red-dim);
   background: rgba(58,16,16,0.4);
-  font-size: 12px;         /* era 11px */
+  font-size: 12px;        
   color: var(--text2);
   line-height: 1.4;
 }
